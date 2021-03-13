@@ -16,7 +16,7 @@ describe("Functions into mmm-testing.js", function () {
 	describe("roundValue", function () {
 		describe("this.roundValue is 1", function () {
 			console.log("Here");
-			expect(Module.definitions["mmm-testing"].roundValue(4)).to.equal(value[1]);
+			expect(Module.definitions["mmm-testing"].roundValue(4)).to.equal(1);
 		});
 	});
 });
