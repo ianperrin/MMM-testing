@@ -4,7 +4,7 @@
     "description": "A test MagicMirror module for experimenting.",
     "main": "mmm-testing.js",
     "scripts": {
-        "test:unit": "NODE_ENV=test mocha tests --recursive",
+        "test:unit": "NODE_ENV=test mocha tests --recursive"
     },
     "repository": {
         "type": "git",
