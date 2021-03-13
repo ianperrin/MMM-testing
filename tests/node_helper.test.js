@@ -8,7 +8,7 @@ describe("Functions into node_helper.js", function () {
 		var Module = require("../node_helper.js");
 		var m = new Module();
 		m.setName("mmm-testing");
-		m.setPath(path.resolve("../"));
+//		m.setPath(path.resolve("../"));
 	});
 
 	describe("callApi", function () {
