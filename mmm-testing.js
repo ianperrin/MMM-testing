@@ -16,5 +16,8 @@ Module.register("mmm-testing", {
 
 	getTemplateData: function () {
 		return this.config;
+	},
+	returnValue: function () {
+		return 1;
 	}
 });
