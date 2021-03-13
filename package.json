@@ -1,29 +1,29 @@
 {
-	"name": "mmm-testing",
-	"version": "1.0.0",
-	"description": "A test MagicMirror module for experimenting.",
-	"main": "mmm-testing.js",
-	"scripts": {
-		"test:js": "tests/*.test.js"
-  },
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ianperrin/mmm-testing.git"
-	},
-	"keywords": [
-		"magic mirror",
-		"smart mirror",
-		"mirror UI",
-		"modular"
-	],
-	"author": "Ian Perrin",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/ianperrin/mmm-testing/issues"
-	},
-	"homepage": "https://ianperrin.com",
-  "devDependencies": {
-    "chai": "*",
-    "mocha": "*"
-  }
+    "name": "mmm-testing",
+    "version": "1.0.0",
+    "description": "A test MagicMirror module for experimenting.",
+    "main": "mmm-testing.js",
+    "scripts": {
+        "test:unit": "NODE_ENV=test mocha tests --recursive",
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ianperrin/mmm-testing.git"
+    },
+    "keywords": [
+        "magic mirror",
+        "smart mirror",
+        "mirror UI",
+        "modular"
+    ],
+    "author": "Ian Perrin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ianperrin/mmm-testing/issues"
+    },
+    "homepage": "https://ianperrin.com",
+    "devDependencies": {
+        "chai": "*",
+        "mocha": "*"
+    }
 }
