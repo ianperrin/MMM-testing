@@ -1,21 +1,21 @@
 const expect = require("chai").expect;
 
 describe("Functions into mmm-testing.js", function () {
-	// Fake for use by newsletter.js
-	Module = {};
-	Module.definitions = {};
-	Module.register = function (name, moduleDefinition) {
-		Module.definitions[name] = moduleDefinition;
-	};
-
 	before(function () {
+		console.log("Before function");
+		Module = {};
+		config = {};
+		Module.definitions = {};
+		Module.register = function (name, moduleDefinition) {
+			Module.definitions[name] = moduleDefinition;
+		};
 		require("../mmm-testing.js");
 		Module.definitions["mmm-testing"].config = {};
 	});
 
 	describe("roundValue", function () {
-		describe("this.roundValue is 1", function () {
-			console.log("Here");
+		console.log("Here");
+		it(`for 4 should be return 1}`, function () {
 			expect(Module.definitions["mmm-testing"].roundValue(4)).to.equal(1);
 		});
 	});
