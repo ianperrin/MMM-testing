@@ -1,17 +1,18 @@
 const expect = require("chai").expect;
-const moduleAlias = require('module-alias');
+const moduleAlias = require("module-alias");
+var helper;
 
 describe("Functions in node_helper.js", function () {
   before(function () {
-    moduleAlias.addAlias('node_helper', "../../js/node_helper.js");
+    moduleAlias.addAlias("node_helper", "../../js/node_helper.js");
     var Module = require("../node_helper.js");
-    m = new Module();
-    m.setName("mmm-testing");
+    helper = new Module();
+    helper.setName("mmm-testing");
   });
 
   describe("callApi", function () {
     it(`for 1 should be return 1`, function () {
-      expect(m.callApi()).to.equal(1);
+      expect(helper.callApi()).to.equal(1);
     });
   });
 });
