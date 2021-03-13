@@ -11,6 +11,12 @@ describe("Functions into mmm-testing.js", function () {
 	before(function () {
 		// load newsfeed.js
 		require("../mmm-testing.js");
-		//Module.definitions.mmm-testing.config = {};
+		Module.definitions["mmm-testing"].config = {};
+	});
+
+	describe("returnValue", function () {
+		describe("this.config.returnValue is 1", function () {
+			expect(Module.definitions["mmm-testing"].()).to.equal(value[1]);
+		});
 	});
 });
