@@ -17,7 +17,7 @@ Module.register("mmm-testing", {
 	getTemplateData: function () {
 		return this.config;
 	},
-	returnValue: function () {
+	roundValue: function (value) {
 		return 1;
 	}
 });
