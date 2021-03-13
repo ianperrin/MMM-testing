@@ -5,7 +5,9 @@ describe("Functions into mmm-testing.js", function () {
 	Module = {};
 	Module.definitions = {};
 	Module.register = function (name, moduleDefinition) {
+		console.log(name);
 		Module.definitions[name] = moduleDefinition;
+		console.log(Module.definitions);
 	};
 
 	before(function () {
