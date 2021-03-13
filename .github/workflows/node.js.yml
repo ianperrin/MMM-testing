@@ -20,7 +20,17 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout MagicMirror repo
+      uses: actions/checkout@v2
+      with:
+        repository: MichMich/MagicMirror
+        path: MagicMirror
+    
+    - name: Checkout Module repo
+      uses: actions/checkout@v2
+      with:
+        path: MagicMirror/modules/mmm-testing
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
