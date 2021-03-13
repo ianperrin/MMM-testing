@@ -5,6 +5,9 @@
     "main": "mmm-testing.js",
     "scripts": {
         "test:unit": "NODE_ENV=test mocha tests --recursive"
+        "test:prettier": "prettier --check **/*.{js,css,json,md,yml}",
+		"test:js": "eslint *.js translations/*.js tests/**/*.js --config .eslintrc.json --quiet",
+		"test:css": "stylelint *.css --config .stylelintrc.json"
     },
     "repository": {
         "type": "git",
@@ -24,7 +27,16 @@
     "homepage": "https://ianperrin.com",
     "devDependencies": {
         "chai": "*",
+        "eslint": "^7.15.0",
+        "eslint-config-prettier": "^7.0.0",
+		"eslint-plugin-jsdoc": "^30.7.8",
+		"eslint-plugin-prettier": "^3.2.0",
         "mocha": "*",
-        "module-alias": "^2.2.2"
+        "module-alias": "^2.2.2",
+        "prettier": "^2.2.1",
+		"stylelint": "^13.8.0",
+		"stylelint-config-prettier": "^8.0.2",
+		"stylelint-config-standard": "^20.0.0",
+		"stylelint-prettier": "^1.1.2"
     }
 }
