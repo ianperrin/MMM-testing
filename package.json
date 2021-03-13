@@ -27,7 +27,7 @@
         "mocha": "*",
         "module-alias": "^2.2.2"
     },
-	"_moduleAliases": {
-		"node_helper": "../../js/node_helper.js"
-	}
+    "_moduleAliases": {
+        "node_helper": "../../js/node_helper.js"
+    }
 }
