@@ -24,6 +24,10 @@
     "homepage": "https://ianperrin.com",
     "devDependencies": {
         "chai": "*",
-        "mocha": "*"
-    }
+        "mocha": "*",
+        "module-alias": "^2.2.2"
+    },
+	"_moduleAliases": {
+		"node_helper": "../../js/node_helper.js"
+	}
 }
