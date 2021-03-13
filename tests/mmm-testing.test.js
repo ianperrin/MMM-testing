@@ -14,6 +14,7 @@ describe("Functions into mmm-testing.js", function () {
 		// load newsfeed.js
 		require("../mmm-testing.js");
 		Module.definitions["mmm-testing"].config = {};
+		console.log(Module.definitions);
 	});
 
 	describe("returnValue", function () {
