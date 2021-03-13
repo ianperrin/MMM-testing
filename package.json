@@ -6,7 +6,7 @@
     "scripts": {
         "test:unit": "NODE_ENV=test mocha tests --recursive",
         "test:prettier": "prettier --check **/*.{js,css,json,md,yml}",
-        "test:js": "eslint *.js translations/*.js tests/**/*.js --config .eslintrc.json --quiet",
+        "test:js": "eslint *.js translations/*.json tests/**/*.js --config .eslintrc.json --quiet",
         "test:css": "stylelint *.css --config .stylelintrc.json"
     },
     "repository": {
