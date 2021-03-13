@@ -16,7 +16,7 @@ describe("Functions into mmm-testing.js", function () {
 
 	describe("returnValue", function () {
 		describe("this.config.returnValue is 1", function () {
-			expect(Module.definitions["mmm-testing"].()).to.equal(value[1]);
+			expect(Module.definitions["mmm-testing"].returnValue()).to.equal(value[1]);
 		});
 	});
 });
