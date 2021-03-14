@@ -1,45 +1,46 @@
 {
-    "name": "mmm-testing",
-    "version": "1.0.0",
-    "description": "A test MagicMirror module for experimenting.",
-    "main": "mmm-testing.js",
-    "scripts": {
-        "test:unit": "NODE_ENV=test mocha tests --recursive",
-        "test:prettier": "prettier --check **/*.{js,css,json,md,yml}",
-        "test:js": "eslint *.js tests/**/*.js --config .eslintrc.json --quiet",
-        "test:css": "stylelint *.css --config .stylelintrc.json",
-        "lint:prettier": "prettier --write **/*.{js,css,json,md,yml}",
-        "lint:js": "eslint *.js tests/**/*.js --config .eslintrc.json --fix",
-        "lint:css": "stylelint *.css --config .stylelintrc.json --fix"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ianperrin/mmm-testing.git"
-    },
-    "keywords": [
-        "magic mirror",
-        "smart mirror",
-        "mirror UI",
-        "modular"
-    ],
-    "author": "Ian Perrin",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ianperrin/mmm-testing/issues"
-    },
-    "homepage": "https://ianperrin.com",
-    "devDependencies": {
-        "chai": "*",
-        "eslint": "^7.15.0",
-        "eslint-config-prettier": "^7.0.0",
-        "eslint-plugin-jsdoc": "^30.7.8",
-        "eslint-plugin-prettier": "^3.2.0",
-        "mocha": "*",
-        "module-alias": "^2.2.2",
-        "prettier": "^2.2.1",
-        "stylelint": "^13.8.0",
-        "stylelint-config-prettier": "^8.0.2",
-        "stylelint-config-standard": "^20.0.0",
-        "stylelint-prettier": "^1.1.2"
-    }
+	"name": "mmm-testing",
+	"version": "1.0.0",
+	"description": "A test MagicMirror module for experimenting.",
+	"main": "mmm-testing.js",
+	"scripts": {
+		"test": "npm run test:unit && npm run test:prettier && npm run test:js && npm run test:css",
+		"test:unit": "NODE_ENV=test mocha tests --recursive",
+		"test:prettier": "prettier --check **/*.{js,css,json,md,yml}",
+		"test:js": "eslint *.js tests/**/*.js --config .eslintrc.json --quiet",
+		"test:css": "stylelint *.css --config .stylelintrc.json",
+		"lint:prettier": "prettier --write **/*.{js,css,json,md,yml}",
+		"lint:js": "eslint *.js tests/**/*.js --config .eslintrc.json --fix",
+		"lint:css": "stylelint *.css --config .stylelintrc.json --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ianperrin/mmm-testing.git"
+	},
+	"keywords": [
+		"magic mirror",
+		"smart mirror",
+		"mirror UI",
+		"modular"
+	],
+	"author": "Ian Perrin",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ianperrin/mmm-testing/issues"
+	},
+	"homepage": "https://ianperrin.com",
+	"devDependencies": {
+		"chai": "*",
+		"eslint": "^7.15.0",
+		"eslint-config-prettier": "^7.0.0",
+		"eslint-plugin-jsdoc": "^30.7.8",
+		"eslint-plugin-prettier": "^3.2.0",
+		"mocha": "*",
+		"module-alias": "^2.2.2",
+		"prettier": "^2.2.1",
+		"stylelint": "^13.8.0",
+		"stylelint-config-prettier": "^8.0.2",
+		"stylelint-config-standard": "^20.0.0",
+		"stylelint-prettier": "^1.1.2"
+	}
 }
