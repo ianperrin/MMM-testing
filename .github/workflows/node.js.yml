@@ -44,7 +44,7 @@ jobs:
     
     - name: Run tests
       run: |
-        cd modules/mmm-testing
+        cd MagicMirror/modules/mmm-testing
         npm install
         #npm ci
         npm run test:unit
