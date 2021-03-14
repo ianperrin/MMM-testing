@@ -39,9 +39,6 @@ jobs:
     - name: Install MagicMirror and run tests
       run: |
         cd MagicMirror
-        Xvfb :99 -screen 0 1024x768x16 &
-        export DISPLAY=:99
-        npm install
         cd modules/mmm-testing
         npm install
         npm ci
