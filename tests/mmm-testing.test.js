@@ -1,6 +1,6 @@
 const expect = require("chai").expect;
 
-describe("Functions into mmm-testing.js", function () {
+describe("Functions in mmm-testing.js", function () {
 	before(function () {
 		Module = {};
 		config = {};
